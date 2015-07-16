@@ -1,0 +1,366 @@
+
+html {
+
+	font-size: 100%;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+
+
+body {
+             /* prevent copy paste, to allow, change 'none' to 'text' */
+	font-family: Arial, Helvetica, sans-serif;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    text-transform:uppercase;
+    width:100%;
+    background: url("../img/background_app.png");
+    background-size: cover; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Portrait layout (default) */
+
+
+
+/***************homescreen ************/
+
+#container {
+	width: 50%;
+	margin-top: 10%;
+	border-radius: 10px;
+	background-color: #E0E0E0;
+	margin-left: auto;
+	min-height: 180px;
+	margin-right: auto;
+	display: block;
+	padding-top: 4%;
+	padding-bottom: 2%;	
+	-moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+	-webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+	box-shadow: 3px 4px 3px rgba(0,0,0,.5);
+
+
+}
+.logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3%;
+	width: 60%;
+	height: 50%;
+}
+.login {
+	font-size: 1em;
+	clear: both;
+	margin-left: 22%;
+	margin-bottom: 1%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+#password {
+
+background: url('img/passwordIcon.png') right no-repeat;
+width:80%; 
+height: 30px; 
+padding: 5px; 
+font-size: 16px; 
+margin-left: 18px; 
+border-bottom-left-radius: 7px; 
+border-bottom-right-radius: 7px; 
+background-color: #E4E4E4; 
+color: #5E5E5E;
+}
+
+
+
+#username {
+background: url('img/loginicon.png') right no-repeat;
+width:80%; 
+height: 30px; 
+padding: 5px; 
+font-size: 16px; 
+margin-left: 18px; 
+border-top-left-radius: 7px; 
+border-top-right-radius: 7px; 
+background-color: #E4E4E4; 
+color: #5E5E5E;
+}
+
+
+#track_title {
+	display: block;
+	font-size: 2em;
+	margin-left: 10%;
+	margin-bottom: 8%;
+	margin-top: 6%;
+	
+}
+
+.track {
+	float: left;
+	margin-left: 5%;
+	display: block;
+}
+
+#track_cont {
+	margin-left: 5%;
+}
+
+.btn {
+  background: #b3a314;
+  background-image: -webkit-linear-gradient(top, #b3a314, #cae08d);
+  background-image: -moz-linear-gradient(top, #b3a314, #cae08d);
+  background-image: -ms-linear-gradient(top, #b3a314, #cae08d);
+  background-image: -o-linear-gradient(top, #b3a314, #cae08d);
+  background-image: linear-gradient(to bottom, #b3a314, #cae08d);
+  -webkit-border-radius: 13;
+  -moz-border-radius: 13;
+  border-radius: 10px;
+  display: block;
+  font-family: Arial;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+  font-size: 1em;
+  width: 50%;
+  padding: 8px;
+  text-decoration: none;
+  margin-bottom: 2%;
+}
+
+.btn:hover {
+  background: #6b6b2e;
+  text-decoration: none;
+}
+.user_pass {
+	border: 1px solid black;
+	display: block;
+	margin-left: 22%;
+	margin-bottom: 1%;
+	min-width: 55%;
+	min-height: 25px;
+
+}
+
+h1 {
+    font-size:24px;
+    font-weight:normal;
+    margin:0px;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+}
+
+#trackingStatus {
+	font-size: 2em;
+	color: white;
+	margin-left: 2%;
+
+}
+
+.event {
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    color:#FFFFFF;
+    font-size:12px;
+    margin:0px 30px;
+    padding:2px 0px;
+}
+
+.event.listening {
+    background-color:#333333;
+    display:block;
+}
+
+.event.received {
+    background-color:#4B946A;
+    display:none;
+}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
+
+#startTimeDiv {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	height: 30px;
+	padding: 3px; 
+	font-size: 1.8em;
+}
+
+#stopTimeDiv {
+	width: 80%;
+	height: 30px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 3px; 
+	font-size: 1.8em;
+}
+
+/************* ADMIN SETTINGS **************/
+
+
+#startTime {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	height: 30px;
+	background-color: white;
+	padding: 8px; 
+	font-size: 1.8em;
+}
+
+#stopTime {
+	width: 80%;
+	height: 30px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	padding: 8px; 
+	font-size: 1.8em;
+}
+
+p.settings_title {
+	font-family: Arial;
+	color: white;
+	font-weight: bold;
+	width:80%; 
+	min-height: 1.7em; 
+	padding: 10px; 
+	font-size: 1.4em; 
+	border-top-left-radius: 7px; 
+	border-top-right-radius: 7px; 
+	background-color: #b3a314; 
+	margin-top: 10%;
+	color: #5E5E5E;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+}
+}
+#settings_container {
+	padding: 5%;
+}
+
+.sub {
+	font-size: 1.2em;
+	font-family: Arial;
+	background-color: #A0A0A0; 
+	color: white;
+	width:80%; 
+	min-height: 30px; 
+	padding: 10px; 
+	padding-top: 2%;
+	font-size: 16px; 
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: middle;
+
+}
+
+
+.lastsub {
+	width: 80%;
+	height: 30px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	padding: 8px; 
+	font-size: 1.8em;
+}
+
+
+
+.btn_set {
+  background: #b3a314;
+  background-image: -webkit-linear-gradient(top, #b3a314, #cae08d);
+  background-image: -moz-linear-gradient(top, #b3a314, #cae08d);
+  background-image: -ms-linear-gradient(top, #b3a314, #cae08d);
+  background-image: -o-linear-gradient(top, #b3a314, #cae08d);
+  background-image: linear-gradient(to bottom, #b3a314, #cae08d);
+  -webkit-border-radius: 13;
+  -moz-border-radius: 13;
+  border-radius: 10px;
+  font-family: Arial;
+  margin-left: 60%;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 1em;
+  width: 30%;
+  min-height: 3em;
+  padding: 8px;
+  text-decoration: none;
+  margin-bottom: 4%;
+}
+
+.btn_set:hover {
+  background: #6b6b2e;
+  text-decoration: none;
+}
+
+.btn_3 {
+  background: #00CC33 ;
+  -webkit-border-radius: 13;
+  -moz-border-radius: 13;
+  border-radius: 10px;
+  font-family: Arial;
+  margin-left: 10%;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 1em;
+  width: 30%;
+  min-height: 3em;
+  padding: 8px;
+  text-decoration: none;
+  margin-bottom: 4%;
+}
+
+.btn_3:hover {
+  background: #6b6b2e;
+  text-decoration: none;
+}
+
+.names {
+	font-size: 1.2em;
+	font-family: Arial;
+	background-color: white; 
+	color: black;
+	width:80%; 
+	min-height: 30px; 
+	padding: 8px; 
+	padding-top: 2%;
+	font-size: 16px; 
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: middle;
+}
