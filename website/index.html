@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>iKure Login</title>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+
+	</head>
+	<body id="loginBackground"> 
+		<div id="login">
+			<form action="scripts/VerifyLogin.php" method="POST" id="loginForm">
+				<tr>
+					<input type="text" id="username"name="username" placeholder="username"/>
+					</br>
+				</tr>
+				<tr>	
+					<input type="password" id="password" name="password" placeholder="password" onkeypress="enterPressed()"/>
+					</br> </br>
+				</tr>
+					<button id="signIn" class="btn">Sign In </button>
+					<div id="incorrectPass"></div>
+			</form>
+		</div>
+	</body>
+</html>

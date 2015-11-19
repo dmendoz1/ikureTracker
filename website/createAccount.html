@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Create Account</title>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/createAccount.js"></script>
+
+	</head>
+	<body class="backgroundMain"> &nbsp;		
+		<div id="wrapper"> 
+			<div id="nav_wrapper">
+				<div id="nav">
+						<ul> 
+							<li><a href="list.html">List Health Workers  </a></li>	
+							<li><a href="createAccount.html" class="active">Create New Account</a></li>
+							<li><a href="index.html" id="logout">Log Out</a></li>
+						</ul>
+				</div>
+			</div>
+			<div id="createAccountBar"> </div>
+			<div id="createAccountBox">
+				<p style="font-size: 18px"> To create an account, please complete the following form: </p>
+				<form method="POST" id="createAccountForm">
+				<div id="createAccountLeft">
+				<table>
+					<tr>
+						<td>
+							First Name: 
+						</td>	
+						<td>
+							<input id="firstName" type="text" name="firstName"  class="textbox" />
+							</br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Last Name: 
+						</td>
+						<td>
+							<input id="lastName" type="text" name="lastName"  class="textbox" />
+							</br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Phone Number:&nbsp;&nbsp;&nbsp;&nbsp;
+						</td>
+						<td>	
+							<input id="phoneNumber" type="text" name="phoneNumber" class="textbox" />
+							</br>
+						</td>
+					</tr>
+				</table>
+				</div>
+					<div id="createAccountRight">
+						<table>
+							<tr>
+								<td>
+									Username: 
+								</td>
+								<td>
+									<input id="createUsername" type="text" name="newUsername" class="textbox"/>
+									</br>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Password: 
+								</td>
+								<td>	
+									<input id="createPassword" type="text" name="newPassword"  class="textbox"/>
+									</br>
+								</td>
+							</tr>
+							<tr>
+								<td>					
+									Retype Password: 
+								</td>
+								<td>	
+									<input id="passwordConf" type="text" name="passwordReenter"  class="textbox" />
+									</br>
+								</td>
+							</tr>
+						</table>
+						<div id="status"></div>
+					</div>
+					</br>
+					</table>
+					<button class="createbtn" id="createButton" > <center> Create </center></div>
+					
+				    </div>
+		    </form>
+		</div>
+		</div>
+	</body>
+	
+</html>
